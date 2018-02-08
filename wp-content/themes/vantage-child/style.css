@@ -8,3 +8,38 @@ Version: 1.0.0
 Template: vantage
 Text Domain: vantage-child
 */
+.searchform ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+.searchform ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+.searchform :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+.searchform :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+#primary #products-teaser {
+  align-items: stretch;
+}
+#primary .products-teaser > div {
+  border: 1px solid #eee;
+}
+#primary .products-teaser__product h5 {
+  font-size: 25px;
+}
+.entry-content .full-width--blue-section__headline h1 {
+  color: #fff;
+  font-size: 45px;
+}
+.entry-content .full-width--blue-section__headline .decoration {
+  display: none;
+}
+.what-we-do__image {
+  text-align: center;
+}
