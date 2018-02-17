@@ -29,6 +29,13 @@ Text Domain: vantage-child
 }
 #primary .products-teaser > div {
   border: 1px solid #eee;
+  position: relative;
+}
+#primary .products-teaser > div .widget_sow-button {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
 }
 #primary .products-teaser__product h5 {
   font-size: 25px;
@@ -77,6 +84,18 @@ Text Domain: vantage-child
 .entry-content .sow-testimonials .sow-testimonial-user .sow-text {
   align-self: center;
   color: #fff;
+}
+.entry-content .about-us-section.panel-row-style.panel-row-style-for-4-4 {
+  margin: 0;
+}
+.entry-content .sow-features-list .sow-features-feature p.sow-more-text a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #6fce4a;
+}
+.entry-content .sow-features-list .sow-features-feature p.sow-more-text a:hover {
+  text-decoration: none;
 }
 .entry-content .widget_circleicon-widget .circle-icon-box h4 {
   margin-bottom: 0;
