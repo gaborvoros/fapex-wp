@@ -127,3 +127,7 @@ Text Domain: vantage-child
 .footer-widget__contact .widget_circleicon-widget .circle-icon-box a.more-button i {
   display: none;
 }
+.layout-full #colophon {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
