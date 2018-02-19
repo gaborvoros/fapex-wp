@@ -24,6 +24,27 @@ Text Domain: vantage-child
   /* Firefox 18- */
   color: #fff;
 }
+#masthead .hgroup {
+  padding: 0;
+}
+#masthead .hgroup .logo img {
+  height: 75px;
+  width: auto;
+}
+#masthead .widget_polylang ul li {
+  float: none;
+  display: inline-block;
+}
+.main-navigation ul {
+  text-align: right;
+}
+#masthead-widgets .language-switch__service {
+  float: right;
+}
+#masthead-widgets .language-switch__service .widget {
+  width: 100%;
+  text-align: right;
+}
 #primary #products-teaser {
   align-items: stretch;
 }
