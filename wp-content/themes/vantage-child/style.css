@@ -48,6 +48,44 @@ Text Domain: vantage-child
   font-size: 16px;
   color: #666666;
 }
+.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+  width: 1080px;
+  padding-top: 100px;
+}
+.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 {
+  background-color: #3abaf1;
+  color: #fff;
+  text-shadow: none;
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 35px !important;
+  margin-bottom: 45px;
+  font-weight: bold;
+}
+.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 + p {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 22px;
+  background-color: #fff;
+  text-shadow: none;
+  color: #142639;
+  margin-bottom: .3em;
+  line-height: 1.4;
+}
+.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a {
+  background-color: #3abaf1;
+  color: #fff;
+  padding: 1em 2em;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a:hover,
+.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a:active {
+  text-decoration: none;
+}
 .entry-content .sow-testimonials .sow-testimonial-text {
   position: relative;
   padding-top: 70px;
@@ -87,15 +125,6 @@ Text Domain: vantage-child
 }
 .entry-content .about-us-section.panel-row-style.panel-row-style-for-4-4 {
   margin: 0;
-}
-.entry-content .sow-features-list .sow-features-feature p.sow-more-text a {
-  color: #fff;
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #6fce4a;
-}
-.entry-content .sow-features-list .sow-features-feature p.sow-more-text a:hover {
-  text-decoration: none;
 }
 .entry-content .widget_circleicon-widget .circle-icon-box h4 {
   margin-bottom: 0;
