@@ -106,6 +106,8 @@ Text Domain: vantage-child
 .entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
   width: 1080px;
   padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 {
   background-color: #3abaf1;
