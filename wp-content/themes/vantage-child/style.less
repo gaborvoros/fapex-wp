@@ -81,8 +81,19 @@ Text Domain: vantage-child
 		display: block;
 	}
 }
-.main-navigation ul{
-	text-align: right;
+.main-navigation{
+	.menu{
+		position: relative;
+		top: 4px;
+	}
+	ul{
+		text-align: right;
+		li.current_page_item{
+			a{
+				border-bottom: 4px solid @brand-color;
+			}
+		}
+	}
 }
 #masthead-widgets {
 	.language-switch__service {

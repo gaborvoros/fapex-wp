@@ -69,8 +69,15 @@ Text Domain: vantage-child
 #sticky-container .sticky-logo {
   display: block;
 }
+.main-navigation .menu {
+  position: relative;
+  top: 4px;
+}
 .main-navigation ul {
   text-align: right;
+}
+.main-navigation ul li.current_page_item a {
+  border-bottom: 4px solid #3abaf1;
 }
 #masthead-widgets .language-switch__service {
   float: right;
