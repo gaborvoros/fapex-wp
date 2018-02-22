@@ -34,8 +34,7 @@
 
            <?php if (is_active_sidebar('sidebar-masthead')) : ?>
 				 <div id="masthead-widgets" class="full-container">
-					 <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
-							 rel="home" class="logo"><?php vantage_display_logo(); ?></a>
+
 					 <div class="language-switch__service">
                     <?php dynamic_sidebar('sidebar-masthead'); ?>
 					 </div>
@@ -46,6 +45,12 @@
 
 	</div><!-- .hgroup.full-container -->
 	<div class="top-menu">
+		<div class="full-container">
+			<div class="logo-container">
+				<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
+				rel="home" class="logo"><?php vantage_display_logo(); ?></a>
+			</div>
+		</div>
 
        <?php get_template_part('parts/menu', apply_filters('vantage_menu_type', siteorigin_setting('layout_menu'))); ?>
 	</div>

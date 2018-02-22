@@ -24,6 +24,9 @@ Text Domain: vantage-child
   /* Firefox 18- */
   color: #fff;
 }
+#masthead {
+  background: #fff;
+}
 #masthead .hgroup {
   padding: 0;
 }
@@ -34,6 +37,37 @@ Text Domain: vantage-child
 #masthead .widget_polylang ul li {
   float: none;
   display: inline-block;
+}
+#masthead .widget_polylang ul li span {
+  margin-left: 0 !important;
+}
+#masthead-widgets {
+  margin-bottom: 5px;
+}
+#masthead-widgets .widget {
+  padding-right: 0;
+}
+.top-menu .logo-container {
+  float: left;
+  position: relative;
+  z-index: 10000;
+  margin-top: -30px;
+}
+.top-menu .logo-container .logo img {
+  height: 75px;
+  width: auto;
+}
+.sticky-logo {
+  display: none;
+  float: left;
+  margin-top: 8px;
+}
+.sticky-logo img {
+  height: 35px;
+  width: auto;
+}
+#sticky-container .sticky-logo {
+  display: block;
 }
 .main-navigation ul {
   text-align: right;

@@ -26,6 +26,7 @@ Text Domain: vantage-child
 }
 
 #masthead {
+	background: #fff;
 	.hgroup {
 		padding: 0;
 		.logo{
@@ -37,9 +38,49 @@ Text Domain: vantage-child
 	.widget_polylang ul li{
 		float: none;
 		display: inline-block;
+		span{
+			margin-left: 0 !important;
+		}
 	}
 }
 
+#masthead-widgets {
+	margin-bottom: 5px;
+	.widget{
+		padding-right: 0;
+	}
+}
+
+.top-menu{
+	.logo-container{
+		float: left;
+		position: relative;
+		z-index: 10000;
+		margin-top: -30px;
+		.logo{
+			img{
+				height: 75px;
+				width: auto;
+			}
+		}
+	}
+}
+
+.sticky-logo{
+	display: none;
+	float: left;
+	margin-top: 8px;
+	img{
+		height: 35px;
+		width: auto;
+	}
+}
+
+#sticky-container{
+	.sticky-logo{
+		display: block;
+	}
+}
 .main-navigation ul{
 	text-align: right;
 }
