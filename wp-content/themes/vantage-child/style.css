@@ -110,13 +110,13 @@ Text Domain: vantage-child
   font-size: 16px;
   color: #666666;
 }
-.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
+.entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
   width: 1080px;
   padding-top: 100px;
   padding-left: 0;
   padding-right: 0;
 }
-.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 {
+.entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 {
   background-color: #3abaf1;
   color: #fff;
   text-shadow: none;
@@ -126,7 +126,7 @@ Text Domain: vantage-child
   margin-bottom: 45px;
   font-weight: bold;
 }
-.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 + p {
+.entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 + p {
   display: inline-block;
   padding: 10px 25px;
   font-size: 22px;
@@ -136,7 +136,7 @@ Text Domain: vantage-child
   margin-bottom: .3em;
   line-height: 1.4;
 }
-.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a {
+.entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a {
   background-color: #3abaf1;
   color: #fff;
   padding: 1em 2em;
@@ -146,16 +146,16 @@ Text Domain: vantage-child
   text-transform: uppercase;
   font-size: 1.25em;
 }
-.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a:hover,
-.entry-content .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a:active {
+.entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a:hover,
+.entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper a:active {
   text-decoration: none;
 }
-.entry-content .sow-testimonials .sow-testimonial-text {
+.entry-content .widget_sow-testimonials .sow-testimonials .sow-testimonial-text {
   position: relative;
   padding-top: 70px;
   padding-bottom: 30px;
 }
-.entry-content .sow-testimonials .sow-testimonial-text:before {
+.entry-content .widget_sow-testimonials .sow-testimonials .sow-testimonial-text:before {
   content: '\201D';
   position: absolute;
   top: 25px;
@@ -164,7 +164,7 @@ Text Domain: vantage-child
   line-height: 1;
   color: #6fce4a;
 }
-.entry-content .sow-testimonials .sow-testimonial-text:after {
+.entry-content .widget_sow-testimonials .sow-testimonials .sow-testimonial-text:after {
   content: "";
   display: block;
   position: absolute;
@@ -176,14 +176,14 @@ Text Domain: vantage-child
   border-width: 10px 7.5px 0 7.5px;
   border-color: #ffffff transparent transparent transparent;
 }
-.entry-content .sow-testimonials .sow-testimonial-user {
+.entry-content .widget_sow-testimonials .sow-testimonials .sow-testimonial-user {
   display: flex;
 }
-.entry-content .sow-testimonials .sow-testimonial-user .sow-image-wrapper {
+.entry-content .widget_sow-testimonials .sow-testimonials .sow-testimonial-user .sow-image-wrapper {
   flex: 0 0 50px;
   margin-right: 15px;
 }
-.entry-content .sow-testimonials .sow-testimonial-user .sow-text {
+.entry-content .widget_sow-testimonials .sow-testimonials .sow-testimonial-user .sow-text {
   align-self: center;
   color: #fff;
 }
@@ -242,4 +242,28 @@ Text Domain: vantage-child
 .layout-full #colophon {
   padding-top: 0;
   padding-bottom: 20px;
+}
+/* Product list */
+#main {
+  background: #fff;
+}
+.woocommerce #main a.button,
+.woocommerce #main .checkout-button,
+.woocommerce #main input.button,
+.woocommerce #main .button.alt {
+  padding: 1em 2em;
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product,
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  border: 1px solid #eee;
+  padding: 20px 15px;
+  text-align: center;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce-page ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce-page ul.products li.product .woocommerce-loop-product__title {
+  font-size: 22px;
 }

@@ -138,7 +138,7 @@ Text Domain: vantage-child
 			color: @content-color;
 		}
 	}
-	.sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper{
+	.widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper{
 		width: 1080px;
 		padding-top: 100px;
 		padding-left: 0;
@@ -177,7 +177,7 @@ Text Domain: vantage-child
 			}
 		}
 	}
-	.sow-testimonials {
+	.widget_sow-testimonials .sow-testimonials {
 		.sow-testimonial-text{
 			position: relative;
 			padding-top: 70px;
@@ -291,4 +291,28 @@ Text Domain: vantage-child
 .layout-full #colophon{
 	padding-top:0;
 	padding-bottom: 20px;
+}
+
+/* Product list */
+#main{
+	background: #fff;
+}
+.woocommerce {
+	#main{
+		a.button, .checkout-button, input.button, .button.alt{
+			padding: 1em 2em;
+		}
+	}
+}
+.woocommerce, .woocommerce-page {
+	ul.products {
+		li.product, li.product{
+			border: 1px solid #eee;
+			padding: 20px 15px;
+			text-align: center;
+			.woocommerce-loop-product__title{
+				font-size: 22px;
+			}
+		}
+	}
 }
