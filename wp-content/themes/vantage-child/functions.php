@@ -34,6 +34,10 @@ function parent_override()
 
 /* Woocommerce override*/
 
+
+
+
+
 //add contact link after short description
 add_action('woocommerce_single_product_summary', 'woocommerce_template_add_contact_link', 25);
 function woocommerce_template_add_contact_link()
@@ -68,7 +72,6 @@ function woo_remove_product_tabs($tabs)
 add_filter('woocommerce_product_tabs', 'woo_new_product_tab');
 function woo_new_product_tab($tabs)
 {
-    // Adds the new tab
     global $product;
 
     if (!empty($product->get_attributes()['specification'])) {
@@ -79,46 +82,35 @@ function woo_new_product_tab($tabs)
         );
     }
 
-    if (!empty($product->get_attributes()['video'])) {
-        $tabs['video_tab'] = array(
-            'title' => __('Video', 'woocommerce'),
+    if (!empty($product->get_attributes()['uses'])) {
+        $tabs['uses_tab'] = array(
+            'title' => __('Uses', 'woocommerce'),
             'priority' => 51,
-            'callback' => 'woo_video_tab_content'
+            'callback' => 'woo_uses_tab_content'
         );
     }
     return $tabs;
 }
 
-function woo_specification_tab_content()
-{
-    // The new tab content
+function woo_specification_tab_content(){
     global $product;
     do_action('woocommerce_product_specification', $product);
 }
 
-function woo_video_tab_content()
-{
-    // The new tab content
-    global $product;
-    do_action('woocommerce_product_video', $product);
-}
-
 add_action('woocommerce_product_specification', 'wc_display_specification', 10);
-
-function wc_display_specification($product)
-{
-
+function wc_display_specification($product){
     set_query_var('product', $product);
     set_query_var('attribute', $product->get_attributes()['specification']);
     get_template_part('templates/single-product/product-attributes');
 }
 
-add_action('woocommerce_product_video', 'wc_display_video', 11);
+function woo_uses_tab_content(){
+    global $product;
+    do_action('woocommerce_product_uses', $product);
+}
 
-function wc_display_video($product)
-{
-
-    set_query_var('product', $product);
-    set_query_var('attribute', $product->get_attributes()['video']);
-    get_template_part('templates/single-product/product-attributes');
+add_action('woocommerce_product_uses', 'wc_display_uses', 11);
+function wc_display_uses($product){
+    $post_id = get_the_ID();
+    echo get_post_meta($post_id, 'wpcf-uses', true);
 }
