@@ -24,6 +24,9 @@ Text Domain: vantage-child
   /* Firefox 18- */
   color: #fff;
 }
+a:focus {
+  outline: none;
+}
 #masthead {
   background: #fff;
 }
@@ -266,4 +269,44 @@ Text Domain: vantage-child
 .woocommerce ul.products li.product .woocommerce-loop-product__title,
 .woocommerce-page ul.products li.product .woocommerce-loop-product__title {
   font-size: 22px;
+}
+.woocommerce .woocommerce-Tabs-panel h2,
+.woocommerce-page .woocommerce-Tabs-panel h2 {
+  display: none;
+}
+.woocommerce .woocommerce-Tabs-panel table,
+.woocommerce-page .woocommerce-Tabs-panel table {
+  margin-top: 50px;
+}
+.woocommerce .woocommerce-Tabs-panel table th,
+.woocommerce-page .woocommerce-Tabs-panel table th {
+  color: #3abaf1;
+  font-size: 18px;
+}
+.woocommerce #page-wrapper .product .summary h1.entry-title {
+  font-size: 35px;
+  color: #3abaf1;
+}
+.woocommerce #page-wrapper .product .summary .product_meta {
+  display: none;
+}
+.woocommerce #page-wrapper ul.products li.product a img {
+  width: auto;
+  height: 180px;
+  margin: 0 auto 1em;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  background-color: #f6f6fa;
+}
+.item-description:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.item-description__description-with-image img {
+  float: left;
+  margin-right: 20px;
+}
+.item-description__description-video {
+  max-width: 560px;
 }

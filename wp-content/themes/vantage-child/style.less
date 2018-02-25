@@ -10,6 +10,7 @@ Text Domain: vantage-child
 */
 @import 'less/colors.less';
 
+
 .searchform {
 	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 		color: #fff;
@@ -23,6 +24,10 @@ Text Domain: vantage-child
 	:-moz-placeholder { /* Firefox 18- */
 		color: #fff;
 	}
+}
+
+a:focus{
+	outline:none;
 }
 
 #masthead {
@@ -304,6 +309,7 @@ Text Domain: vantage-child
 		}
 	}
 }
+
 .woocommerce, .woocommerce-page {
 	ul.products {
 		li.product, li.product{
@@ -314,5 +320,64 @@ Text Domain: vantage-child
 				font-size: 22px;
 			}
 		}
+	}
+	.woocommerce-Tabs-panel{
+		h2{
+			display: none;
+		}
+		table{
+			margin-top: 50px;
+			th{
+				color: @brand-color;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.woocommerce {
+	#page-wrapper {
+		.product {
+			.summary{
+				h1.entry-title{
+					font-size: 35px;
+					color: @brand-color;
+				}
+				.product_meta{
+					display: none;
+				}
+			}
+
+		}
+		ul.products{
+			li.product {
+				a{
+					img{
+						width: auto;
+						height: 180px;
+						margin: 0 auto 1em;
+					}
+				}
+			}
+		}
+	}
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li{
+	background-color: @light-grey;
+}
+.item-description{
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	&__description-with-image{
+		img{
+			float: left;
+			margin-right: 20px;
+		}
+	}
+	&__description-video{
+		max-width: 560px;
 	}
 }
