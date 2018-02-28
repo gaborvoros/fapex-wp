@@ -270,10 +270,6 @@ a:focus {
 .woocommerce-page ul.products li.product .woocommerce-loop-product__title {
   font-size: 22px;
 }
-.woocommerce .woocommerce-Tabs-panel h2,
-.woocommerce-page .woocommerce-Tabs-panel h2 {
-  display: none;
-}
 .woocommerce .woocommerce-Tabs-panel table,
 .woocommerce-page .woocommerce-Tabs-panel table {
   margin-top: 50px;
@@ -309,4 +305,9 @@ a:focus {
 }
 .item-description__description-video {
   max-width: 560px;
+}
+.list-number .numbers {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 16px;
 }

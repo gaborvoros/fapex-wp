@@ -82,7 +82,9 @@ function woo_new_product_tab($tabs)
         );
     }
 
-    if (!empty($product->get_attributes()['uses'])) {
+    $post_id = get_the_ID();
+    $uses = get_post_meta($post_id, 'wpcf-uses', true);
+    if (!empty($uses)) {
         $tabs['uses_tab'] = array(
             'title' => __('Uses', 'woocommerce'),
             'priority' => 51,
