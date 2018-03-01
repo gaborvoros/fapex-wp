@@ -1,16 +1,25 @@
 <?php
 /**
- * Enqueue the parent theme stylesheet.
+ * Enqueue the parent theme stylesheet and add custom js file
  */
-
-
 function vantage_child_enqueue_parent_style()
 {
     wp_enqueue_style('vantage-parent-style', get_template_directory_uri() . '/style.css');
 }
-
 add_action('wp_enqueue_scripts', 'vantage_child_enqueue_parent_style', 8);
 
+function fapex_theme_js() {
+    wp_register_style('theme-css', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
+    wp_enqueue_style('theme-css');
+    wp_enqueue_script( 'theme_js', get_stylesheet_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'theme_js', get_stylesheet_directory_uri() . '/js/vantage-child.js', array( 'jquery' ), '1.0', true );
+}
+add_action('wp_enqueue_scripts', 'fapex_theme_js');
+
+
+/*
+ * override parents sidebar and add custom widget to footer
+ */
 add_action('widgets_init', 'parent_override', 11);
 function parent_override()
 {
