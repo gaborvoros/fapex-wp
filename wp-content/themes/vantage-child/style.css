@@ -27,6 +27,40 @@ Text Domain: vantage-child
 a:focus {
   outline: none;
 }
+.footer-widget__contact {
+  background: #3abaf1;
+  padding: 50px 0;
+}
+.footer-widget__contact__items {
+  margin: 0 -10px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-widget__contact__items:before,
+.footer-widget__contact__items:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.footer-widget__contact .panel-grid-cell {
+  width: 33.3333%;
+  padding: 0 15px;
+}
+.footer-widget__contact .widget_circleicon-widget .circle-icon-box h4 {
+  margin-bottom: 0;
+}
+.footer-widget__contact .widget_circleicon-widget .circle-icon-box p.text,
+.footer-widget__contact .widget_circleicon-widget .circle-icon-box a.more-button {
+  color: #fff;
+  font-size: 13px;
+}
+.footer-widget__contact .widget_circleicon-widget .circle-icon-box a.more-button i {
+  display: none;
+}
+.layout-full #colophon {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
 #masthead {
   background: #fff;
 }
@@ -212,40 +246,6 @@ a:focus {
 .what-we-do__image {
   text-align: center;
 }
-.footer-widget__contact {
-  background: #3abaf1;
-  padding: 50px 0;
-}
-.footer-widget__contact__items {
-  margin: 0 -10px;
-  display: flex;
-  justify-content: space-between;
-}
-.footer-widget__contact__items:before,
-.footer-widget__contact__items:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.footer-widget__contact .panel-grid-cell {
-  width: 33.3333%;
-  padding: 0 15px;
-}
-.footer-widget__contact .widget_circleicon-widget .circle-icon-box h4 {
-  margin-bottom: 0;
-}
-.footer-widget__contact .widget_circleicon-widget .circle-icon-box p.text,
-.footer-widget__contact .widget_circleicon-widget .circle-icon-box a.more-button {
-  color: #fff;
-  font-size: 13px;
-}
-.footer-widget__contact .widget_circleicon-widget .circle-icon-box a.more-button i {
-  display: none;
-}
-.layout-full #colophon {
-  padding-top: 0;
-  padding-bottom: 20px;
-}
 /* Product list */
 #main {
   background: #fff;
@@ -270,6 +270,7 @@ a:focus {
 .woocommerce-page ul.products li.product .woocommerce-loop-product__title {
   font-size: 22px;
 }
+/* Product detail */
 .woocommerce .woocommerce-Tabs-panel table,
 .woocommerce-page .woocommerce-Tabs-panel table {
   margin-top: 50px;

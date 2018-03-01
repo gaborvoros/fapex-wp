@@ -1,0 +1,56 @@
+.searchform {
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: #fff;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: #fff;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+		color: #fff;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: #fff;
+	}
+}
+
+a:focus{
+	outline:none;
+}
+
+.footer-widget__contact{
+	background: @brand-color;
+	padding: 50px 0;
+	&__items{
+		margin: 0 -10px;
+		display: flex;
+		justify-content: space-between;
+		&:before, &:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+	.panel-grid-cell{
+		width: 33.3333%;
+		padding: 0 15px;
+	}
+	.widget_circleicon-widget {
+		.circle-icon-box {
+			h4{
+				margin-bottom: 0;
+			}
+			p.text, a.more-button{
+				color: #fff;
+				font-size: 13px;
+			}
+			a.more-button i{
+				display: none;
+			}
+		}
+	}
+}
+
+.layout-full #colophon{
+	padding-top:0;
+	padding-bottom: 20px;
+}

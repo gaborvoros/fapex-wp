@@ -1,0 +1,150 @@
+#primary {
+	#products-teaser {
+		align-items: stretch;
+	}
+	.products-teaser {
+		> div {
+			border: 1px solid #eee;
+			position: relative;
+			.widget_sow-button{
+				position: absolute;
+				bottom: 15px;
+				right: 0;
+				left: 0;
+			}
+		}
+		&__product {
+			h5 {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+.entry-content {
+	.sow-headline-container {
+		h1.sow-headline {
+			padding-bottom: 20px;
+			color: @brand-color;
+		}
+		h6.sow-sub-headline {
+			font-size: 16px;
+			color: @content-color;
+		}
+	}
+	.widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper{
+		width: 1080px;
+		padding-top: 100px;
+		padding-left: 0;
+		padding-right: 0;
+		h2{
+			background-color: @brand-color;
+			color: #fff;
+			text-shadow: none;
+			padding: 10px 25px;
+			display: inline-block;
+			font-size: 35px !important;
+			margin-bottom: 45px;
+			font-weight: bold;
+		}
+		h2 + p{
+			display: inline-block;
+			padding: 10px 25px;
+			font-size: 22px;
+			background-color: #fff;
+			text-shadow: none;
+			color: @dark-grey;
+			margin-bottom: .3em;
+			line-height: 1.4;
+		}
+		a{
+			background-color: @brand-color;
+			color: #fff;
+			padding: 1em 2em;
+			display: inline-block;
+			text-decoration: none;
+			text-shadow: none;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			&:hover, &:active{
+				text-decoration: none;
+			}
+		}
+	}
+	.widget_sow-testimonials .sow-testimonials {
+		.sow-testimonial-text{
+			position: relative;
+			padding-top: 70px;
+			padding-bottom: 30px;
+			&:before{
+				content: '\201D';
+				position: absolute;
+				top: 25px;
+				display: block;
+				font-size: 100px;
+				line-height: 1;
+				color: @green;
+			}
+			&:after {
+				content: "";
+				display: block;
+				position:absolute;
+				bottom:-10px;
+				left: 35px;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 10px 7.5px 0 7.5px;
+				border-color: #ffffff transparent transparent transparent;
+			}
+		}
+		.sow-testimonial-user {
+			display: flex;
+			.sow-image-wrapper{
+				flex: 0 0 50px;
+				margin-right: 15px;
+			}
+			.sow-text{
+				align-self: center;
+				color: #fff;
+			}
+		}
+	}
+
+	.about-us-section.panel-row-style.panel-row-style-for-4-4{
+		margin: 0;
+	}
+
+	.widget_circleicon-widget .circle-icon-box {
+		h4{
+			margin-bottom: 0;
+		}
+		a.more-button{
+			color: #fff;
+			i{
+				display: none;
+			}
+		}
+	}
+	.full-width--blue-section {
+		.sow-headline-container {
+			h1.sow-headline {
+				color: #fff;
+				font-size: 45px;
+			}
+		}
+	}
+	.full-width--parallax-section {
+		.sow-headline-container {
+			h1.sow-headline {
+				color: #fff;
+			}
+		}
+	}
+
+}
+
+
+.what-we-do__image {
+	text-align: center;
+}
