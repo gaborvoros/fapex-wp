@@ -286,17 +286,21 @@ a:focus {
   color: #3abaf1;
   font-size: 18px;
 }
-.woocommerce #page-wrapper .product .summary h1.entry-title {
+.woocommerce #page-wrapper #main .product .summary h1.entry-title {
   font-size: 35px;
   color: #3abaf1;
 }
-.woocommerce #page-wrapper .product .summary .product_meta {
+.woocommerce #page-wrapper #main .product .summary .product_meta {
   display: none;
 }
-.woocommerce #page-wrapper ul.products li.product a img {
+.woocommerce #page-wrapper #main ul.products li.product a img {
   width: auto;
   height: 180px;
   margin: 0 auto 1em;
+}
+.woocommerce #page-wrapper #main .upsells.products ul.products li.product,
+.woocommerce #page-wrapper #main .related.products ul.products li.product {
+  max-width: none;
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs li {
   background-color: #f6f6fa;

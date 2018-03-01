@@ -1,34 +1,35 @@
 /* Product detail */
 
 .woocommerce, .woocommerce-page {
-	.woocommerce-Tabs-panel{
-		table{
+	.woocommerce-Tabs-panel {
+		table {
 			margin-top: 50px;
-			th{
+			th {
 				color: @brand-color;
 				font-size: 18px;
 			}
 		}
 	}
 }
+
 .woocommerce {
-	#page-wrapper {
+	#page-wrapper #main{
 		.product {
-			.summary{
-				h1.entry-title{
+			.summary {
+				h1.entry-title {
 					font-size: 35px;
 					color: @brand-color;
 				}
-				.product_meta{
+				.product_meta {
 					display: none;
 				}
 			}
 
 		}
-		ul.products{
+		ul.products {
 			li.product {
-				a{
-					img{
+				a {
+					img {
 						width: auto;
 						height: 180px;
 						margin: 0 auto 1em;
@@ -36,30 +37,39 @@
 				}
 			}
 		}
+		.upsells.products, .related.products {
+			ul.products {
+				li.product {
+					max-width: none;
+				}
+			}
+		}
 	}
 }
-.woocommerce div.product .woocommerce-tabs ul.tabs li{
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
 	background-color: @light-grey;
 }
-.item-description{
-	&:after{
+
+.item-description {
+	&:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	&__description-with-image{
-		img{
+	&__description-with-image {
+		img {
 			float: left;
 			margin-right: 20px;
 		}
 	}
-	&__description-video{
+	&__description-video {
 		max-width: 560px;
 	}
 }
 
-.list-number{
-	.numbers{
+.list-number {
+	.numbers {
 		margin-right: 5px;
 		font-weight: bold;
 		font-size: 16px;
