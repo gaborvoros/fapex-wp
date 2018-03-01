@@ -61,6 +61,12 @@ a:focus {
   padding-top: 0;
   padding-bottom: 20px;
 }
+.grey-background {
+  background-color: #f6f6fa;
+}
+.text-underline {
+  text-decoration: underline;
+}
 #masthead {
   background: #fff;
 }
@@ -311,4 +317,43 @@ a:focus {
   margin-right: 5px;
   font-weight: bold;
   font-size: 16px;
+}
+.instructions h5 {
+  margin: 0 0 1em 0;
+}
+.instructions--top {
+  margin-bottom: 50px;
+}
+.instructions__content {
+  display: flex;
+  margin-bottom: 30px;
+}
+.instructions__content__left,
+.instructions__content__right {
+  flex: 0 0 150px;
+}
+.instructions__content__left {
+  margin-right: 50px;
+}
+.instructions__content__right {
+  margin-left: 50px;
+  align-self: center;
+}
+.instructions__content__right__attention {
+  padding: 50px 15px;
+  background: #f6f6fa;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.instructions__content__center {
+  flex: 0 0 calc(100% - 400px);
+}
+.instructions__image--center {
+  text-align: center;
+  margin: 30px 0;
+}
+.guarantee-hint {
+  padding: 15px 30px 30px 30px;
+  margin-top: 30px;
 }

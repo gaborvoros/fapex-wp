@@ -1,0 +1,43 @@
+.instructions {
+	h5{
+		margin: 0 0 1em 0;
+	}
+	&--top{
+		margin-bottom: 50px;
+	}
+	&__content {
+		display: flex;
+		margin-bottom: 30px;
+		&__left, &__right {
+			flex: 0 0 150px;
+		}
+		&__left {
+			margin-right: 50px;
+		}
+		&__right {
+			margin-left: 50px;
+			align-self: center;
+			&__attention {
+				padding: 50px 15px;
+				background: @light-grey;
+				border-radius: 100px;
+				text-align: center;
+				font-weight: bold;
+			}
+		}
+		&__center {
+			flex: 0 0 ~"calc(100% - 400px)";
+		}
+	}
+	&__image{
+		&--center{
+			text-align: center;
+			margin: 30px 0;
+		}
+	}
+}
+
+.guarantee-hint{
+	padding: 15px 30px 30px 30px;
+	margin-top: 30px;
+}
