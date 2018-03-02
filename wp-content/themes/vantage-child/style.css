@@ -355,4 +355,25 @@ a:focus {
 .faq-list__element__header {
   background-color: #f6f6fa;
   cursor: pointer;
+  padding: .7em 1em;
+}
+.faq-list__element__header span {
+  margin-right: 10px;
+}
+.faq-list__element .card-body {
+  padding: 0 15px;
+}
+.faq-list__element--margin-bottom {
+  margin-bottom: 50px;
+}
+.product-range-table .table > tbody > tr > td,
+.product-range-table .table > tfoot > tr > td,
+.product-range-table .table > thead > tr > td,
+.product-range-table .table > tbody > tr > th,
+.product-range-table .table > tfoot > tr > th,
+.product-range-table .table > thead > tr > th {
+  padding: 14px;
+}
+.product-range-table .product-image {
+  width: 115px;
 }
