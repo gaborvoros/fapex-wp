@@ -349,3 +349,10 @@ a:focus {
   padding: 15px 30px 30px 30px;
   margin-top: 30px;
 }
+.faq-list__element {
+  margin-bottom: 15px;
+}
+.faq-list__element__header {
+  background-color: #f6f6fa;
+  cursor: pointer;
+}
