@@ -1,0 +1,39 @@
+.product-range-table {
+	width: 830px;
+	margin: 0 auto;
+	.table {
+		> tbody, > tfoot, > thead {
+			> tr {
+				> td, > th {
+					padding: 14px;
+					@media screen and (max-width: 960px) {
+						white-space: normal;
+					}
+				}
+			}
+		}
+		img{
+			width: 115px;
+		}
+		@media screen and (max-width: 960px) {
+			width: 830px;
+		}
+	}
+	&__product-name, &__product-type, &__product-ean {
+		width: 150px;
+	}
+	&__product-image, &__product-qty-pack {
+		width: 115px;
+	}
+	&__product-code, &__product-outer {
+		width: 75px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.table-responsive {
+		width: 100%;
+		overflow-y: hidden;
+		-ms-overflow-style: -ms-autohiding-scrollbar;
+	}
+}

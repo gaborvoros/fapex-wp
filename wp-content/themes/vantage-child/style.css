@@ -366,6 +366,10 @@ a:focus {
 .faq-list__element--margin-bottom {
   margin-bottom: 50px;
 }
+.product-range-table {
+  width: 830px;
+  margin: 0 auto;
+}
 .product-range-table .table > tbody > tr > td,
 .product-range-table .table > tfoot > tr > td,
 .product-range-table .table > thead > tr > td,
@@ -374,6 +378,41 @@ a:focus {
 .product-range-table .table > thead > tr > th {
   padding: 14px;
 }
-.product-range-table .product-image {
+@media screen and (max-width: 960px) {
+  .product-range-table .table > tbody > tr > td,
+  .product-range-table .table > tfoot > tr > td,
+  .product-range-table .table > thead > tr > td,
+  .product-range-table .table > tbody > tr > th,
+  .product-range-table .table > tfoot > tr > th,
+  .product-range-table .table > thead > tr > th {
+    white-space: normal;
+  }
+}
+.product-range-table .table img {
   width: 115px;
+}
+@media screen and (max-width: 960px) {
+  .product-range-table .table {
+    width: 830px;
+  }
+}
+.product-range-table__product-name,
+.product-range-table__product-type,
+.product-range-table__product-ean {
+  width: 150px;
+}
+.product-range-table__product-image,
+.product-range-table__product-qty-pack {
+  width: 115px;
+}
+.product-range-table__product-code,
+.product-range-table__product-outer {
+  width: 75px;
+}
+@media screen and (max-width: 960px) {
+  .table-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
 }

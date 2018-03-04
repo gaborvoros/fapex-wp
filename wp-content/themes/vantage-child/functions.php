@@ -45,7 +45,7 @@ function parent_override()
 add_action('woocommerce_single_product_summary', 'woocommerce_template_add_contact_link', 25);
 function woocommerce_template_add_contact_link()
 {
-    echo '<a href="' . get_permalink(4) . '">Contact</a>';
+    echo '<a href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">Contact</a>';
 }
 
 
