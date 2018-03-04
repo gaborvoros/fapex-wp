@@ -45,7 +45,12 @@ function parent_override()
 add_action('woocommerce_single_product_summary', 'woocommerce_template_add_contact_link', 25);
 function woocommerce_template_add_contact_link()
 {
-    echo '<a href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">Contact</a>';
+    if(pll_current_language() == 'en'){
+        echo '<a class="button pull-right short-description__contact-button" href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">Contact</a>';
+    }else if (pll_current_language() == 'hu'){
+        echo '<a class="button pull-right short-description__contact-button" href="' . get_permalink( get_page_by_path( 'kapcsolat' ) ) . '">Kapcsolat</a>';
+    }
+
 }
 
 
@@ -94,11 +99,31 @@ function fapex_new_product_tabs($tabs)
         );
     }
 
+    $productRange = get_post_meta($post_id, 'wpcf-benefits', true);
+    if (!empty($productRange)) {
+        $tabs['benefits_tab'] = array(
+            'title' => __('Benefits', 'woocommerce'),
+            'priority' => 53,
+            'callback' => 'fapex_custom_tab_content',
+            'callback_parameters' => array('wpcf-benefits', $post_id)
+        );
+    }
+
+    $productRange = get_post_meta($post_id, 'wpcf-technical-specification', true);
+    if (!empty($productRange)) {
+        $tabs['technicalSpecification_tab'] = array(
+            'title' => __('Technical Specification', 'woocommerce'),
+            'priority' => 54,
+            'callback' => 'fapex_custom_tab_content',
+            'callback_parameters' => array('wpcf-technical-specification', $post_id)
+        );
+    }
+
     $faqs = get_post_meta($post_id, 'wpcf-faqs', true);
     if (!empty($faqs)) {
         $tabs['faqs_tab'] = array(
             'title' => __('FAQs', 'woocommerce'),
-            'priority' => 53,
+            'priority' => 55,
             'callback' => 'fapex_custom_tab_content',
             'callback_parameters' => array('wpcf-faqs', $post_id)
         );
@@ -108,7 +133,7 @@ function fapex_new_product_tabs($tabs)
     if (!empty($productRange)) {
         $tabs['productRange_tab'] = array(
             'title' => __('Product Range', 'woocommerce'),
-            'priority' => 54,
+            'priority' => 56,
             'callback' => 'fapex_custom_tab_content',
             'callback_parameters' => array('wpcf-product-range', $post_id)
         );

@@ -286,6 +286,9 @@ a:focus {
   color: #3abaf1;
   font-size: 18px;
 }
+.woocommerce div.product div.images {
+  margin-bottom: 5em;
+}
 .woocommerce #page-wrapper #main .product .summary h1.entry-title {
   font-size: 35px;
   color: #3abaf1;
@@ -316,6 +319,9 @@ a:focus {
 }
 .item-description__description-video {
   max-width: 560px;
+}
+.woocommerce a.button.short-description__contact-button {
+  margin-top: 25px;
 }
 .list-number .numbers {
   margin-right: 5px;
