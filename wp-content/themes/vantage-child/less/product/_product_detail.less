@@ -4,18 +4,26 @@
 .woocommerce, .woocommerce-page {
 	.woocommerce-Tabs-panel {
 		table {
-			margin-top: 50px;
 			th {
 				color: @brand-color;
 				font-size: 18px;
 			}
 		}
+		&.panel{
+			box-shadow: none;
+		}
 	}
 }
 
 .woocommerce {
-	div.product div.images{
-		margin-bottom: 5em;
+
+	div.product {
+		div.images{
+			margin-bottom: 5em;
+		}
+		.woocommerce-tabs .panel{
+			padding: 0 0 2em 0;
+		}
 	}
 	#page-wrapper #main{
 		.product {
