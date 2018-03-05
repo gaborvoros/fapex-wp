@@ -111,6 +111,8 @@ a:focus {
 }
 #sticky-container .sticky-logo {
   display: block;
+  position: relative;
+  z-index: 10000;
 }
 .main-navigation .menu {
   position: relative;
