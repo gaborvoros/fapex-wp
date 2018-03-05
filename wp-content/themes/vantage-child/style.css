@@ -121,7 +121,9 @@ a:focus {
 .main-navigation ul {
   text-align: right;
 }
-.main-navigation ul li.current_page_item a {
+.main-navigation ul li.current_page_item a,
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current-menu-parent a {
   border-bottom: 4px solid #3abaf1;
 }
 #masthead-widgets .language-switch__service {
@@ -253,6 +255,10 @@ a:focus {
 }
 .what-we-do__image {
   text-align: center;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 /* Product list */
 #main {
