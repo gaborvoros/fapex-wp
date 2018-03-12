@@ -37,6 +37,21 @@ function parent_override()
     ));
 }
 
+function fapex_legal_sidebar() {
+    register_sidebar(
+        array (
+            'name' => __( 'Legal Links', 'vantage' ),
+            'id' => 'legal-side-bar',
+            'description' => __( 'Legal Links', 'vantage' ),
+            'before_widget' => '<div class="widget-content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        )
+    );
+}
+add_action( 'widgets_init', 'fapex_legal_sidebar', 12);
+
 /************************/
 /* Woocommerce override */
 /************************/

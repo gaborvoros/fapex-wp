@@ -273,6 +273,27 @@ a:focus {
   background: #3abaf1;
   color: #fff;
 }
+.legal-footer-menu {
+  padding-top: 10px;
+}
+.legal-footer-menu ul li {
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+}
+.legal-footer-menu ul li a,
+.legal-footer-menu ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.legal-footer-menu ul li a:before {
+  content: "|";
+  color: #fff;
+  margin-right: 15px;
+}
+.legal-footer-menu ul li:first-child a:before {
+  display: none;
+}
 /* Product list */
 #main {
   background: #fff;
