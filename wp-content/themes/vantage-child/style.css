@@ -260,6 +260,19 @@ a:focus {
   max-width: 600px;
   margin: 0 auto;
 }
+.page-not-found {
+  margin-bottom: 100px;
+}
+.page-not-found .so-widget-sow-headline .sow-headline-container h1.sow-headline {
+  line-height: 1;
+}
+.page-not-found__search {
+  margin: 20px 0;
+}
+.page-not-found__search .search-button {
+  background: #3abaf1;
+  color: #fff;
+}
 /* Product list */
 #main {
   background: #fff;
