@@ -23,7 +23,12 @@ get_header(); ?>
 				<div class="entry-content">
                 <?php
 
-                $post = get_page_by_path( '404-page-not-found' );
+                if(pll_current_language() == 'en'){
+                    $post = get_page_by_path( '404-page-not-found' );
+                }else if (pll_current_language() == 'hu'){
+                    $post = get_page_by_path( '404-oldal' );
+					 }
+
                 $content = apply_filters('the_content', $post->post_content);
                 echo $content;
                 ?>
