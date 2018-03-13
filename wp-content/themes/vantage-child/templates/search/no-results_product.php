@@ -12,7 +12,7 @@
 
 <article id="post-0" class="post no-results not-found">
     <?php if ( siteorigin_page_setting( 'page_title' ) ) : ?>
-		 <h2 class="entry-title"><?php _e( 'Nothing Found on Content Pages', 'vantage' ); ?></h2>
+		 <h2 class="entry-title"><?php _e( 'Nothing Found on Product Pages', 'vantage' ); ?></h2>
     <?php endif; ?>
 	<header class="entry-header">
 
@@ -25,7 +25,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms on our Content Pages. Take a look at our Product Pages or try again with some different keywords.', 'vantage' ); ?></p>
+			<p><?php _e( 'Sorry, but nothing matched your search terms on our Product Pages. Take a look at our Content Pages or try again with some different keywords.', 'vantage' ); ?></p>
 			<?php //get_search_form(); ?>
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">

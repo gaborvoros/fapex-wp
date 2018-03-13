@@ -301,6 +301,10 @@ a:focus {
   font-size: 35px;
   color: #3abaf1;
 }
+.search-results h2 {
+  font-size: 28px;
+  color: #3abaf1;
+}
 .search-results h2#page-title {
   font-size: 28px;
   color: #1B5871;
