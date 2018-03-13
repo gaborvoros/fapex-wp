@@ -1,0 +1,42 @@
+.search-results{
+	h1{
+		font-size: 35px;
+		color: @brand-color;
+	}
+	h2#page-title{
+		font-size: 28px;
+		color: @dark-blue;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.page-header{
+		border: none;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	&__page{
+		margin-bottom: 25px;
+		border-bottom: 1px solid #ccc;
+	}
+	&__page, &__product{
+		padding-bottom: 25px;
+
+	}
+	&__product{
+		&__item{
+			a img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	article.post{
+		.entry-header{
+			h1.entry-title{
+				a{
+					color: @brand-color;
+				}
+			}
+		}
+	}
+}

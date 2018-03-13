@@ -297,6 +297,36 @@ a:focus {
   background: #3abaf1;
   color: #fff;
 }
+.search-results h1 {
+  font-size: 35px;
+  color: #3abaf1;
+}
+.search-results h2#page-title {
+  font-size: 28px;
+  color: #1B5871;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.search-results .page-header {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.search-results__page {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+.search-results__page,
+.search-results__product {
+  padding-bottom: 25px;
+}
+.search-results__product__item a img {
+  width: 100%;
+  height: auto;
+}
+.search-results article.post .entry-header h1.entry-title a {
+  color: #3abaf1;
+}
 .legal-footer-menu {
   padding-top: 10px;
 }
