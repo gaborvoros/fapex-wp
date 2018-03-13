@@ -179,3 +179,23 @@ add_action('fapex_product_customtabs', 'fapex_display_customtabs', 11, 2);
 function fapex_display_customtabs($metaParam, $post_id){
     echo get_post_meta($post_id, $metaParam, true);
 }
+
+function fapex_search_args($query){
+    $customFields = get_option('relevanssi_index_fields');
+    $customFieldsArray = explode(', ', $customFields);
+
+    $the_query = [];
+
+    forEach($customFieldsArray as $customField){
+        $the_query[] = array( 'key' => $customField, 'value' => $query, 'compare' => 'LIKE' );
+    }
+
+    $the_query['relation'] = 'OR';
+
+    $args = array(
+        'post_type' => 'product',
+        'meta_query'    => $the_query
+    );
+
+    return $args;
+}
