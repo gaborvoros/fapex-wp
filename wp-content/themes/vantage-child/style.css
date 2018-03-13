@@ -8,6 +8,7 @@ Version: 1.0.0
 Template: vantage
 Text Domain: vantage-child
 */
+/*  Mediaquery */
 .searchform ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #fff;
@@ -100,6 +101,16 @@ a:focus {
   height: 75px;
   width: auto;
 }
+@media (max-width: 768px) {
+  .top-menu .logo-container .logo img {
+    height: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .top-menu .logo-container {
+    margin-top: -40px;
+  }
+}
 .sticky-logo {
   display: none;
   float: left;
@@ -126,12 +137,25 @@ a:focus {
 .main-navigation ul li.current-menu-parent a {
   border-bottom: 4px solid #3abaf1;
 }
+@media (max-width: 480px) {
+  .main-navigation ul {
+    text-align: left;
+  }
+}
 #masthead-widgets .language-switch__service {
   float: right;
 }
 #masthead-widgets .language-switch__service .widget {
   width: 100%;
   text-align: right;
+}
+@media (max-width: 640px) {
+  body.responsive #masthead-widgets .widget {
+    padding-bottom: 0;
+  }
+  .main-navigation ul li a {
+    padding: 15px 25px;
+  }
 }
 #primary #products-teaser {
   align-items: stretch;
