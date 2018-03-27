@@ -1,10 +1,23 @@
 .legal-footer-menu {
 	padding-top: 10px;
+	float: right;
+	@media(max-width: 480px){
+		float: none;
+	}
 	ul {
+		@media(max-width: 480px){
+			margin-left: 0;
+			text-align: center;
+		}
 		li {
 			list-style: none;
 			float: left;
 			margin-left: 15px;
+			@media(max-width: 480px){
+				float: none;
+				margin-bottom: 10px;
+				margin-left: 0;
+			}
 			a, a:hover {
 				color: #fff;
 				text-decoration: none;
@@ -13,11 +26,24 @@
 				content: "|";
 				color: #fff;
 				margin-right: 15px;
+				@media(max-width: 480px){
+					display: none;
+				}
 			}
 			&:first-child a:before {
 				display: none;
 			}
 		}
 
+	}
+}
+#colophon .full-container{
+	@media(max-width: 1240px){
+		padding-bottom: 25px;
+	}
+}
+.layout-full #colophon{
+	@media(max-width: 480px){
+		padding: 0 0 20px 0;
 	}
 }

@@ -19,7 +19,7 @@
 	<div class="full-container">
 		<div class="row">
 			<div class="col-lg-12 ">
-				<div class="pull-right legal-footer-menu">
+				<div class="legal-footer-menu">
                 <?php if (is_active_sidebar('legal-side-bar')) : ?>
                     <?php dynamic_sidebar('legal-side-bar'); ?>
                 <?php endif; ?>

@@ -4,7 +4,7 @@ Author: SiteOrigin
 Author URI: https://siteorigin.com
 Theme URI: https://siteorigin.com/theme/vantage
 Description: Vantage Child Theme
-Version: 1.0.1
+Version: 1.0.2
 Template: vantage
 Text Domain: vantage-child
 */
@@ -421,6 +421,7 @@ a:focus {
   }
   .widget_circleicon-widget .circle-icon-box.circle-icon-position-left {
     padding-left: 0;
+    padding-right: 0;
     text-align: center;
   }
 }
@@ -482,11 +483,30 @@ a:focus {
 }
 .legal-footer-menu {
   padding-top: 10px;
+  float: right;
+}
+@media (max-width: 480px) {
+  .legal-footer-menu {
+    float: none;
+  }
+}
+@media (max-width: 480px) {
+  .legal-footer-menu ul {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 .legal-footer-menu ul li {
   list-style: none;
   float: left;
   margin-left: 15px;
+}
+@media (max-width: 480px) {
+  .legal-footer-menu ul li {
+    float: none;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
 }
 .legal-footer-menu ul li a,
 .legal-footer-menu ul li a:hover {
@@ -498,8 +518,23 @@ a:focus {
   color: #fff;
   margin-right: 15px;
 }
+@media (max-width: 480px) {
+  .legal-footer-menu ul li a:before {
+    display: none;
+  }
+}
 .legal-footer-menu ul li:first-child a:before {
   display: none;
+}
+@media (max-width: 1240px) {
+  #colophon .full-container {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .layout-full #colophon {
+    padding: 0 0 20px 0;
+  }
 }
 /* Product list */
 #main {
