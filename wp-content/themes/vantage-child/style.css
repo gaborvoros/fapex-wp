@@ -502,15 +502,19 @@ a:focus {
 #main {
   background: #fff;
 }
-.woocommerce #main a.button,
-.woocommerce #main .checkout-button,
-.woocommerce #main input.button,
-.woocommerce #main .button.alt {
+.woocommerce.term-products #main a.button,
+.woocommerce.single-product .related.products a.button,
+.woocommerce.term-products #main .checkout-button,
+.woocommerce.single-product .related.products .checkout-button,
+.woocommerce.term-products #main input.button,
+.woocommerce.single-product .related.products input.button,
+.woocommerce.term-products #main .button.alt,
+.woocommerce.single-product .related.products .button.alt {
   padding: 1em 2em;
   position: absolute;
   bottom: 15px;
-  width: 90%;
-  left: 5%;
+  width: 70% !important;
+  left: 15%;
 }
 .woocommerce .woocommerce-result-count,
 .woocommerce-page .woocommerce-result-count,
@@ -549,7 +553,7 @@ a:focus {
 .woocommerce #primary .products ul li,
 .woocommerce #primary ul.products li {
   flex: 0 0 calc(25% - 30px);
-  margin: 0 15px 30px 15px;
+  margin: 0 15px 30px 15px !important;
   padding: 20px 15px 120px;
 }
 @media (max-width: 980px) {

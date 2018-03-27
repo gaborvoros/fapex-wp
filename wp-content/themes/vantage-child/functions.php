@@ -61,9 +61,9 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_add_conta
 function woocommerce_template_add_contact_link()
 {
     if(pll_current_language() == 'en'){
-        echo '<a class="button pull-right short-description__contact-button" href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">Contact</a>';
+        echo '<a class="button short-description__contact-button" href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">Contact</a>';
     }else if (pll_current_language() == 'hu'){
-        echo '<a class="button pull-right short-description__contact-button" href="' . get_permalink( get_page_by_path( 'kapcsolat' ) ) . '">Kapcsolat</a>';
+        echo '<a class="button short-description__contact-button" href="' . get_permalink( get_page_by_path( 'kapcsolat' ) ) . '">Kapcsolat</a>';
     }
 
 }
