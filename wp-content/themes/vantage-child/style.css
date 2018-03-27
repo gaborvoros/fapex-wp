@@ -247,7 +247,7 @@ a:focus {
 }
 @media (max-width: 480px) {
   .entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 }
 .entry-content .widget_sow-hero .sow-slider-base ul.sow-slider-images .sow-slider-image-wrapper h2 {
