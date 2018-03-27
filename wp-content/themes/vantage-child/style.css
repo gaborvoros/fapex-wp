@@ -167,6 +167,9 @@ a:focus {
   position: relative;
   z-index: 10000;
 }
+.sticky-container {
+  padding: 0 35px;
+}
 .main-navigation .menu {
   position: relative;
   top: 4px;
