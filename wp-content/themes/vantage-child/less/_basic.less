@@ -16,14 +16,27 @@
 a:focus{
 	outline:none;
 }
-
+.mobile-nav-icon:before{
+	font-size: 24px;
+	font-weight: 100;
+}
 .footer-widget__contact{
 	background: @brand-color;
 	padding: 50px 0;
+	@media(max-widtH: @bp-xs-max){
+		padding: 25px 0;
+	}
 	&__items{
 		margin: 0 -10px;
 		display: flex;
 		justify-content: space-between;
+		@media(max-widtH: @bp-m-max){
+			margin: 0;
+			padding: 0 20px;
+		}
+		@media(max-widtH: @bp-xs-max){
+			flex-direction: column;
+		}
 		&:before, &:after{
 			content: '';
 			display: block;
@@ -33,6 +46,10 @@ a:focus{
 	.panel-grid-cell{
 		width: 33.3333%;
 		padding: 0 15px;
+		@media(max-widtH: @bp-xs-max){
+			width: 100%;
+			margin-bottom: 10px;
+		}
 	}
 	.widget_circleicon-widget {
 		.circle-icon-box {
@@ -45,6 +62,12 @@ a:focus{
 			}
 			a.more-button i{
 				display: none;
+			}
+			&.circle-icon-position-left .circle-icon{
+				@media(max-widtH: @bp-xs-max){
+					top: 0;
+					margin-top: 0;
+				}
 			}
 		}
 	}

@@ -16,6 +16,12 @@
 			margin-left: 0 !important;
 		}
 	}
+	@media(max-width: @bp-s-max){
+		padding-top: 15px;
+	}
+	@media(max-width: 480px){
+		padding: 15px 25px 0 25px;
+	}
 }
 
 #masthead-widgets {
@@ -81,6 +87,17 @@
 		}
 	}
 }
+.main-navigation {
+	.menu-mobilenav-container {
+		ul {
+			li {
+				a{
+					padding: 15px 25px 15px 35px;
+				}
+			}
+		}
+	}
+}
 
 #masthead-widgets {
 	.language-switch__service {
@@ -99,5 +116,11 @@
 
 	.main-navigation ul li a {
 		padding: 15px 25px;
+	}
+}
+
+@media(max-width: 480px){
+	#search-icon{
+		right: 15px;
 	}
 }
