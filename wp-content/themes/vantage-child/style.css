@@ -4,7 +4,7 @@ Author: SiteOrigin
 Author URI: https://siteorigin.com
 Theme URI: https://siteorigin.com/theme/vantage
 Description: Vantage Child Theme
-Version: 1.0.2
+Version: 1.0.4
 Template: vantage
 Text Domain: vantage-child
 */
@@ -36,7 +36,7 @@ a:focus {
   background: #3abaf1;
   padding: 50px 0;
 }
-@media (max-widtH: 480px) {
+@media (max-width: 480px) {
   .footer-widget__contact {
     padding: 25px 0;
   }
@@ -46,13 +46,13 @@ a:focus {
   display: flex;
   justify-content: space-between;
 }
-@media (max-widtH: 1024px) {
+@media (max-width: 1024px) {
   .footer-widget__contact__items {
     margin: 0;
     padding: 0 20px;
   }
 }
-@media (max-widtH: 480px) {
+@media (max-width: 480px) {
   .footer-widget__contact__items {
     flex-direction: column;
   }
@@ -67,7 +67,7 @@ a:focus {
   width: 33.3333%;
   padding: 0 15px;
 }
-@media (max-widtH: 480px) {
+@media (max-width: 480px) {
   .footer-widget__contact .panel-grid-cell {
     width: 100%;
     margin-bottom: 10px;
@@ -84,7 +84,7 @@ a:focus {
 .footer-widget__contact .widget_circleicon-widget .circle-icon-box a.more-button i {
   display: none;
 }
-@media (max-widtH: 480px) {
+@media (max-width: 480px) {
   .footer-widget__contact .widget_circleicon-widget .circle-icon-box.circle-icon-position-left .circle-icon {
     top: 0;
     margin-top: 0;
