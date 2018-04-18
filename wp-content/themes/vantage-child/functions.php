@@ -207,5 +207,5 @@ function fapex_search_args($query){
 }
 add_action( 'after_setup_theme', 'my_theme_setup' );
 function my_theme_setup(){
-    load_theme_textdomain( 'vantage-child', get_template_directory() . '/languages' );
+    load_theme_textdomain( 'vantage-child', get_stylesheet_directory() . '/languages' );
 }
