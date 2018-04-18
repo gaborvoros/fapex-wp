@@ -33,9 +33,9 @@ function parent_override()
     unregister_sidebar('sidebar-footer');
 
     register_sidebar(array(
-        'name' => __('Footer', 'vantage'),
+        'name' => __('Footer', 'vantage-child'),
         'id' => 'sidebar-footer',
-        'description' => __('Fapex Cutom Footer', 'vantage'),
+        'description' => __('Fapex Custom Footer', 'vantage-child'),
         'before_widget' => '<div class="panel-grid-cell"><div class="so-panel widget widget_circleicon-widget panel-first-child panel-last-child">',
         'after_widget' => '</div></div>',
         'before_title' => '<h6 class="footer-widgets-item">',
@@ -46,9 +46,9 @@ function parent_override()
 function fapex_legal_sidebar() {
     register_sidebar(
         array (
-            'name' => __( 'Legal Links', 'vantage' ),
+            'name' => __( 'Legal Links', 'vantage-child' ),
             'id' => 'legal-side-bar',
-            'description' => __( 'Legal Links', 'vantage' ),
+            'description' => __( 'Legal Links', 'vantage-child' ),
             'before_widget' => '<div class="widget-content">',
             'after_widget' => "</div>",
             'before_title' => '<h3 class="widget-title">',
@@ -67,9 +67,9 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_add_conta
 function woocommerce_template_add_contact_link()
 {
     if(pll_current_language() == 'en'){
-        echo '<a class="button short-description__contact-button" href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">Contact</a>';
+        echo '<a class="button short-description__contact-button" href="' . get_permalink( get_page_by_path( 'contact' ) ) . '">'.__( 'Contact', 'vantage-child' ).'</a>';
     }else if (pll_current_language() == 'hu'){
-        echo '<a class="button short-description__contact-button" href="' . get_permalink( get_page_by_path( 'kapcsolat' ) ) . '">Kapcsolat</a>';
+        echo '<a class="button short-description__contact-button" href="' . get_permalink( get_page_by_path( 'kapcsolat' ) ) . '">'.__( 'Contact', 'vantage-child' ).'</a>';
     }
 
 }
@@ -92,10 +92,20 @@ function fapex_new_product_tabs($tabs)
     global $product;
     $post_id = get_the_ID();
 
+    $productRange = get_post_meta($post_id, 'wpcf-product-range', true);
+    if (!empty($productRange)) {
+        $tabs['productRange_tab'] = array(
+            'title' => __('Product Range', 'vantage-child'),
+            'priority' => 5,
+            'callback' => 'fapex_custom_tab_content',
+            'callback_parameters' => array('wpcf-product-range', $post_id)
+        );
+    }
+
     if (!empty($product->get_attributes()['specification'])) {
         $tabs['specification_tab'] = array(
-            'title' => __('Specification', 'woocommerce'),
-            'priority' => 50,
+            'title' => __('Specification', 'vantage-child'),
+            'priority' => 51,
             'callback' => 'fapex_specification_tab_content'
         );
     }
@@ -103,8 +113,8 @@ function fapex_new_product_tabs($tabs)
     $uses = get_post_meta($post_id, 'wpcf-uses', true);
     if (!empty($uses)) {
         $tabs['uses_tab'] = array(
-            'title' => __('Uses', 'woocommerce'),
-            'priority' => 51,
+            'title' => __('Uses', 'vantage-child'),
+            'priority' => 52,
             'callback' => 'fapex_custom_tab_content',
             'callback_parameters' => array('wpcf-uses', $post_id)
         );
@@ -113,8 +123,8 @@ function fapex_new_product_tabs($tabs)
     $instructions = get_post_meta($post_id, 'wpcf-instructions', true);
     if (!empty($instructions)) {
         $tabs['instructions_tab'] = array(
-            'title' => __('Instructions', 'woocommerce'),
-            'priority' => 52,
+            'title' => __('Instructions', 'vantage-child'),
+            'priority' => 53,
             'callback' => 'fapex_custom_tab_content',
             'callback_parameters' => array('wpcf-instructions', $post_id)
         );
@@ -123,8 +133,8 @@ function fapex_new_product_tabs($tabs)
     $productRange = get_post_meta($post_id, 'wpcf-benefits', true);
     if (!empty($productRange)) {
         $tabs['benefits_tab'] = array(
-            'title' => __('Benefits', 'woocommerce'),
-            'priority' => 53,
+            'title' => __('Benefits', 'vantage-child'),
+            'priority' => 54,
             'callback' => 'fapex_custom_tab_content',
             'callback_parameters' => array('wpcf-benefits', $post_id)
         );
@@ -133,8 +143,8 @@ function fapex_new_product_tabs($tabs)
     $productRange = get_post_meta($post_id, 'wpcf-technical-specification', true);
     if (!empty($productRange)) {
         $tabs['technicalSpecification_tab'] = array(
-            'title' => __('Technical Specification', 'woocommerce'),
-            'priority' => 54,
+            'title' => __('Technical Specification', 'vantage-child'),
+            'priority' => 55,
             'callback' => 'fapex_custom_tab_content',
             'callback_parameters' => array('wpcf-technical-specification', $post_id)
         );
@@ -143,20 +153,10 @@ function fapex_new_product_tabs($tabs)
     $faqs = get_post_meta($post_id, 'wpcf-faqs', true);
     if (!empty($faqs)) {
         $tabs['faqs_tab'] = array(
-            'title' => __('FAQs', 'woocommerce'),
-            'priority' => 55,
-            'callback' => 'fapex_custom_tab_content',
-            'callback_parameters' => array('wpcf-faqs', $post_id)
-        );
-    }
-
-    $productRange = get_post_meta($post_id, 'wpcf-product-range', true);
-    if (!empty($productRange)) {
-        $tabs['productRange_tab'] = array(
-            'title' => __('Product Range', 'woocommerce'),
+            'title' => __('FAQs', 'vantage-child'),
             'priority' => 56,
             'callback' => 'fapex_custom_tab_content',
-            'callback_parameters' => array('wpcf-product-range', $post_id)
+            'callback_parameters' => array('wpcf-faqs', $post_id)
         );
     }
 
@@ -204,4 +204,8 @@ function fapex_search_args($query){
     );
 
     return $args;
+}
+add_action( 'after_setup_theme', 'my_theme_setup' );
+function my_theme_setup(){
+    load_theme_textdomain( 'vantage-child', get_template_directory() . '/languages' );
 }

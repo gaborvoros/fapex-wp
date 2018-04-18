@@ -16,10 +16,10 @@ get_header(); ?>
 
           <?php if (have_posts()) : ?>
 
-				 <h1><?php echo __('On Content Pages', 'vantage'); ?></h1>
+				 <h1><?php echo __('On Content Pages', 'vantage-child'); ?></h1>
 				 <header class="page-header">
                  <?php if (siteorigin_page_setting('page_title')) : ?>
-						  <h2 id="page-title"><?php printf(__('Search Results on Content Pages for: %s', 'vantage'), '<span>' . get_search_query() . '</span>'); ?></h2>
+						  <h2 id="page-title"><?php printf(__('Search Results on Content Pages for: %s', 'vantage-child'), '<span>' . get_search_query() . '</span>'); ?></h2>
                  <?php endif; ?>
 				 </header><!-- .page-header -->
 
@@ -48,10 +48,10 @@ get_header(); ?>
 		</div>
        <?php if ($the_query->have_posts()) : ?>
 
-			 <h1><?php echo __('On Product Pages', 'vantage'); ?></h1>
+			 <h1><?php echo __('On Product Pages', 'vantage-child'); ?></h1>
 			 <header class="page-header">
               <?php if (siteorigin_page_setting('page_title')) : ?>
-					  <h2 id="page-title"><?php printf(__('Search Results on Product Pages for: %s', 'vantage'), '<span>' . get_search_query() . '</span> '); ?></h2>
+					  <h2 id="page-title"><?php printf(__('Search Results on Product Pages for: %s', 'vantage-child'), '<span>' . get_search_query() . '</span> '); ?></h2>
               <?php endif; ?>
 			 </header><!-- .page-header -->
 
