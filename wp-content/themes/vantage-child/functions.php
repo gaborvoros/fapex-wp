@@ -207,5 +207,22 @@ function fapex_search_args($query){
 }
 add_action( 'after_setup_theme', 'my_theme_setup' );
 function my_theme_setup(){
-    load_theme_textdomain( 'vantage-child', get_stylesheet_directory() . '/languages' );
+    load_theme_textdomain( 'vantage-child', get_template_directory() . '/languages' );
+}
+
+add_filter('woocommerce_related_products', 'get_custom_related_products');
+function get_custom_related_products($related_products){
+    global $product;
+
+    $product_cats_ids = wc_get_product_term_ids( $product->get_id(), 'product_cat' );
+    $product_cat_id = $product_cats_ids[0];
+
+    $products = [];
+    foreach ($related_products as $related_product){
+        $term_list = wp_get_post_terms($related_product,'product_cat',array('fields'=>'ids'));
+       if(in_array($product_cat_id, $term_list)){
+           $products[] = $related_product;
+       }
+    }
+    return $products;
 }
