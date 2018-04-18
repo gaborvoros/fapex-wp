@@ -430,6 +430,10 @@ a:focus {
     max-height: 300px;
   }
 }
+#products-teaser > div:first-child,
+#products-teaser > div:last-child {
+  display: none;
+}
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
